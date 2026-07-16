@@ -1,86 +1,228 @@
-# Đề tài 35 — Quản lý rủi ro bảo mật cho hệ thống IoT quy mô nhỏ
+# Đề tài 35 - Quản lý rủi ro bảo mật cho hệ thống IoT quy mô nhỏ
 
-**Học phần:** Bảo mật IoT (INT570 / INT4410)
-**Lớp:** INT4410 — Bảo mật trong IoT, HK03, năm học 2025–2026
-**Giảng viên hướng dẫn:** Hồ Nhựt Minh Sĩ
-**Sinh viên thực hiện:** Võ Nguyễn Duyên
-**Mã số sinh viên:** 231A010722
+> **Học phần:** Bảo mật trong IoT (INT4410)  
+> **Giảng viên hướng dẫn:** Hồ Nhựt Minh Sĩ  
+> **Sinh viên thực hiện:** Võ Nguyễn Duyên  
+> **Mã số sinh viên:** 231A010722  
+> **Năm học:** 2025–2026
 
 ---
 
-## 1. Mô tả đề tài
+# Giới thiệu
 
-Đề tài xây dựng một quy trình quản lý rủi ro bảo mật đơn giản, dễ áp dụng cho hệ thống
-IoT quy mô nhỏ, cụ thể là mô hình **phòng Lab thực hành Công nghệ thông tin** gồm: camera IP
-giám sát, cảm biến nhiệt độ/độ ẩm, cảm biến khói/PIR, khóa cửa điện tử, gateway chạy Node-RED,
-router Wi-Fi, dashboard giám sát trên cloud và ứng dụng di động điều khiển.
+Đề tài **"Quản lý rủi ro bảo mật cho hệ thống IoT quy mô nhỏ"** được thực hiện nhằm xây dựng một quy trình đánh giá và quản lý rủi ro bảo mật cho hệ thống Internet of Things (IoT) trong môi trường phòng Lab thực hành.
 
-Đề tài không yêu cầu code/demo kỹ thuật; sản phẩm phân tích chính gồm: **danh mục tài sản**,
-**sổ đăng ký rủi ro (risk register)**, **ma trận rủi ro 5x5**, **kế hoạch xử lý 5 rủi ro cao nhất**
-và **checklist kiểm tra định kỳ**.
+Nội dung nghiên cứu tập trung vào việc xác định tài sản, phân tích mối đe dọa và lỗ hổng, đánh giá mức độ rủi ro, xây dựng Risk Register, thiết kế Ma trận rủi ro (Risk Matrix) và đề xuất các biện pháp xử lý phù hợp.
 
-## 2. Nguồn đã sử dụng
+Đề tài được xây dựng dựa trên các tiêu chuẩn và hướng dẫn của:
 
-| Nguồn | Link | Ngày truy cập | Phần đã sử dụng |
-|---|---|---|---|
-| OWASP IoT Security Verification Standard (ISVS) | https://github.com/OWASP/IoT-Security-Verification-Standard-ISVS | 04/07/2026 | Khung yêu cầu bảo mật để xây dựng risk register và checklist |
-| OWASP IoT Security Testing Guide (ISTG) | https://github.com/OWASP/owasp-istg | 04/07/2026 | Tham khảo phương pháp kiểm tra từng hạng mục |
-| OWASP Internet of Things Project | https://github.com/OWASP/www-project-internet-of-things | 04/07/2026 | Tổng hợp các nhóm rủi ro phổ biến (OWASP IoT Top 10) |
+- OWASP IoT Security Verification Standard (ISVS)
+- OWASP IoT Security Testing Guide (ISTG)
+- OWASP Internet of Things Project
+- NIST SP800-30
+- ISO/IEC 27005
 
-Xem chi tiết tại [`references/link_nguon.md`](references/link_nguon.md).
+---
 
-## 3. Cách xem/sử dụng sản phẩm
+# Mục tiêu
 
-Vì đây là đề tài phân tích (không có code chạy được), không cần cài đặt môi trường. Người chấm/người
-đọc có thể mở trực tiếp:
+- Xác định các tài sản cần bảo vệ trong hệ thống IoT.
+- Phân tích các mối đe dọa và lỗ hổng bảo mật.
+- Đánh giá mức độ rủi ro theo phương pháp Likelihood × Impact.
+- Xây dựng Risk Register.
+- Thiết kế Ma trận rủi ro 5×5.
+- Đề xuất kế hoạch xử lý các rủi ro ưu tiên.
+- Xây dựng Checklist kiểm tra định kỳ.
 
-1. `report/Bao_cao_tieu_luan.docx` — báo cáo đầy đủ (mở đầu → mục tiêu → cơ sở lý thuyết →
-   phương pháp → kết quả → đánh giá bảo mật → kết luận → tài liệu tham khảo).
-2. `results/01_danh_muc_tai_san.csv` — danh mục 10 tài sản của hệ thống.
-3. `results/02_risk_register.csv` — sổ đăng ký 17 rủi ro với điểm khả năng, ảnh hưởng, mức ưu tiên.
-4. `results/03_ma_tran_rui_ro_5x5.csv` — ma trận rủi ro 5x5.
-5. `results/04_ke_hoach_xu_ly_top5.csv` — kế hoạch xử lý 5 rủi ro cao nhất.
-6. `results/05_checklist_dinh_ky.csv` — checklist kiểm tra định kỳ.
-7. `slides/Slide_trinh_bay.pptx` — slide thuyết trình 8–12 trang (đang cập nhật).
+---
 
-Các file `.csv` trong `results/` có thể mở trực tiếp bằng Excel/Google Sheets để xem dạng bảng.
+# Mô hình hệ thống
 
-## 4. Kết quả chính
+Hệ thống IoT khảo sát bao gồm:
 
-- Xác định **17 rủi ro cụ thể**, trong đó 2 rủi ro ở mức **Nghiêm trọng** (truy cập trái phép
-  camera IP do mật khẩu mặc định; bẻ mật khẩu tài khoản admin do thiếu MFA).
-- Đề xuất **5 biện pháp xử lý ưu tiên**, đều là biện pháp cấu hình chi phí thấp, không cần
-  đầu tư phần cứng mới (đổi mật khẩu, bật MFA, đóng cổng router, xác thực dữ liệu cảm biến,
-  chống replay lệnh khóa cửa).
-- Xây dựng **checklist kiểm tra định kỳ** theo tuần/tháng/quý để duy trì mức an toàn lâu dài.
+- Camera IP
+- Cảm biến nhiệt độ và độ ẩm
+- Cảm biến khói và PIR
+- Khóa cửa điện tử
+- Gateway Node-RED
+- Router Wi-Fi
+- Cloud Dashboard
+- Ứng dụng Mobile
 
-## 5. Giới hạn an toàn (cam kết)
-
-- Toàn bộ phân tích thực hiện trên **mô hình giả định**, không khảo sát, quét hay truy cập
-  bất kỳ hệ thống/thiết bị thật nào.
-- Không sử dụng dữ liệu cá nhân thật, không đưa mật khẩu/token/secret thật vào repo.
-- Điểm số khả năng xảy ra và mức độ ảnh hưởng trong risk register mang tính ước lượng dựa trên
-  tài liệu tham khảo và kinh nghiệm triển khai phổ biến, chưa được kiểm chứng bằng dữ liệu sự cố
-  thực tế — đây cũng là hạn chế đã nêu rõ trong báo cáo.
-
-## 6. Cấu trúc repo
-
+```text
+Camera IP
+      │
+Cảm biến
+      │
+Gateway Node-RED
+      │
+Router Wi-Fi
+      │
+Cloud Dashboard
+      │
+Ứng dụng Mobile
 ```
-vonguyenduyen-detai35-quanlyruiro-iot/
+
+---
+
+# Cấu trúc Repository
+
+```text
+detai35-quanlyruiro-iot
+│
 ├── README.md
-├── report/
+│
+├── report
 │   └── Bao_cao_tieu_luan.docx
-├── slides/
-│   └── Slide_trinh_bay.pptx        (đang cập nhật)
-├── results/
+│
+├── results
 │   ├── 01_danh_muc_tai_san.csv
 │   ├── 02_risk_register.csv
 │   ├── 03_ma_tran_rui_ro_5x5.csv
 │   ├── 04_ke_hoach_xu_ly_top5.csv
 │   └── 05_checklist_dinh_ky.csv
-└── references/
+│
+└── references
     └── link_nguon.md
 ```
 
-> Ghi chú: đề tài không có code/config/dataset mô phỏng nên các thư mục `src/`, `configs/`,
-> `data/` theo mẫu chung của lớp không được tạo; các sản phẩm phân tích được đặt trong `results/`.
+---
+
+# Nội dung Repository
+
+## 📁 report
+
+Thư mục chứa báo cáo chính của đề tài.
+
+Bao gồm:
+
+- Báo cáo Word (.docx)
+- (Có thể bổ sung PDF nếu cần)
+
+Nội dung báo cáo:
+
+- Mở đầu
+- Mục tiêu
+- Cơ sở lý thuyết
+- Phương pháp nghiên cứu
+- Danh mục tài sản
+- Risk Register
+- Ma trận rủi ro
+- Kế hoạch xử lý
+- Checklist
+- Đánh giá bảo mật
+- Kết luận
+- Tài liệu tham khảo
+
+---
+
+## 📁 results
+
+Thư mục chứa toàn bộ sản phẩm phân tích của đề tài.
+
+### 01_danh_muc_tai_san.csv
+
+Danh mục các tài sản cần bảo vệ trong hệ thống IoT.
+
+### 02_risk_register.csv
+
+Sổ đăng ký rủi ro gồm:
+
+- Tài sản
+- Mối đe dọa
+- Lỗ hổng
+- Khả năng xảy ra
+- Mức độ ảnh hưởng
+- Điểm rủi ro
+- Biện pháp xử lý
+
+### 03_ma_tran_rui_ro_5x5.csv
+
+Ma trận đánh giá rủi ro theo 5 mức Khả năng xảy ra và 5 mức Ảnh hưởng.
+
+### 04_ke_hoach_xu_ly_top5.csv
+
+Kế hoạch xử lý 5 rủi ro có mức ưu tiên cao nhất.
+
+### 05_checklist_dinh_ky.csv
+
+Checklist kiểm tra định kỳ nhằm duy trì mức độ an toàn của hệ thống.
+
+---
+
+## 📁 references
+
+Thư mục lưu danh sách các nguồn tài liệu được sử dụng trong quá trình thực hiện đề tài.
+
+---
+
+# Kết quả đạt được
+
+Đề tài đã hoàn thành các nội dung sau:
+
+- Xây dựng danh mục tài sản của hệ thống IoT.
+- Phân tích 17 rủi ro bảo mật.
+- Xây dựng Risk Register.
+- Thiết kế Ma trận rủi ro 5×5.
+- Đề xuất kế hoạch xử lý 5 rủi ro ưu tiên.
+- Xây dựng Checklist kiểm tra định kỳ.
+- Đánh giá mức độ rủi ro và đề xuất giải pháp giảm thiểu.
+
+---
+
+# Tài liệu tham khảo
+
+Các tiêu chuẩn và tài liệu được sử dụng:
+
+- OWASP IoT Security Verification Standard (ISVS)
+- OWASP IoT Security Testing Guide (ISTG)
+- OWASP Internet of Things Project
+- NIST SP800-30 – Guide for Conducting Risk Assessments
+- ISO/IEC 27005 – Information Security Risk Management
+
+Chi tiết xem trong:
+
+```text
+references/link_nguon.md
+```
+
+---
+
+# Giới hạn của đề tài
+
+- Hệ thống được xây dựng dưới dạng mô hình phục vụ học tập.
+- Không thực hiện kiểm thử trên hệ thống thực tế.
+- Không sử dụng dữ liệu cá nhân hoặc dữ liệu nhạy cảm.
+- Các đánh giá rủi ro được xây dựng dựa trên tài liệu tham khảo và mô hình giả định.
+
+---
+
+# Cam kết
+
+Đề tài được thực hiện phục vụ mục đích học tập và nghiên cứu.
+
+Không sử dụng cho mục đích tấn công, khai thác hoặc gây ảnh hưởng đến bất kỳ hệ thống thực tế nào.
+
+---
+
+# Tác giả
+
+**Võ Nguyễn Duyên**
+
+**Mã số sinh viên:** 231A010722
+
+**Trường:** Đại học Văn Hiến
+
+**Học phần:** Bảo mật trong IoT (INT4410)
+
+**Giảng viên hướng dẫn:** Hồ Nhựt Minh Sĩ
+
+**Năm học:** 2025–2026
+
+---
+
+# Giấy phép
+
+Repository này được tạo nhằm phục vụ mục đích học tập và nghiên cứu tại Trường Đại học Văn Hiến.
+
+© 2026 Võ Nguyễn Duyên. All Rights Reserved.
