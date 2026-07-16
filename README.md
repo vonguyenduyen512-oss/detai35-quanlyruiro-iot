@@ -182,9 +182,9 @@ Các tiêu chuẩn và tài liệu được sử dụng:
 
 Chi tiết xem trong:
 
-```text
-references/link_nguon.md
-```
+Chi tiết xem tại:
+
+[references/link_nguon.md](references/link_nguon.md)
 
 ---
 
