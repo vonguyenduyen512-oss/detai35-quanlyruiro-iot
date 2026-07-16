@@ -181,9 +181,7 @@ Các tiêu chuẩn và tài liệu được sử dụng:
 - ISO/IEC 27005 – Information Security Risk Management
 
 
-Chi tiết xem tại:
-
-[references/link_nguon.md](references/link_nguon.md)
+Chi tiết xem tại: **[references/link_nguon.md](references/link_nguon.md)**
 
 ---
 
