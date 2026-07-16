@@ -180,7 +180,6 @@ Các tiêu chuẩn và tài liệu được sử dụng:
 - NIST SP800-30 – Guide for Conducting Risk Assessments
 - ISO/IEC 27005 – Information Security Risk Management
 
-Chi tiết xem trong:
 
 Chi tiết xem tại:
 
