@@ -1,225 +1,249 @@
+# IoT Security Risk Management for Small-Scale IoT Systems
+
+![GitHub](https://img.shields.io/badge/Project-IoT%20Security-blue)
+![University](https://img.shields.io/badge/University-Van%20Hien-green)
+![Course](https://img.shields.io/badge/Course-IoT%20Security-orange)
+![License](https://img.shields.io/badge/License-Educational-lightgrey)
+
+---
+
 # Đề tài 35 - Quản lý rủi ro bảo mật cho hệ thống IoT quy mô nhỏ
 
-> **Học phần:** Bảo mật trong IoT (INT4410)  
-> **Giảng viên hướng dẫn:** Hồ Nhựt Minh Sĩ  
-> **Sinh viên thực hiện:** Võ Nguyễn Duyên  
-> **Mã số sinh viên:** 231A010722  
-> **Năm học:** 2025–2026
+## Course
+
+IoT Security (INT570)
+
+## University
+
+Van Hien University
+
+## Lecturer
+
+Ho Nhut Minh
+
+## Author
+
+Vo Nguyen Duyen
+
+Student ID: 231A010722
+
+Academic Year: 2025–2026
 
 ---
 
-# Giới thiệu
+# Project Description
 
-Đề tài **"Quản lý rủi ro bảo mật cho hệ thống IoT quy mô nhỏ"** được thực hiện nhằm xây dựng một quy trình đánh giá và quản lý rủi ro bảo mật cho hệ thống Internet of Things (IoT) trong môi trường phòng Lab thực hành.
+This project presents a lightweight security risk management framework for a small-scale Internet of Things (IoT) laboratory.
 
-Nội dung nghiên cứu tập trung vào việc xác định tài sản, phân tích mối đe dọa và lỗ hổng, đánh giá mức độ rủi ro, xây dựng Risk Register, thiết kế Ma trận rủi ro (Risk Matrix) và đề xuất các biện pháp xử lý phù hợp.
+The study focuses on identifying critical assets, analyzing threats and vulnerabilities, evaluating security risks, constructing a Risk Register, designing a 5×5 Risk Matrix, and proposing appropriate mitigation strategies.
 
-Đề tài được xây dựng dựa trên các tiêu chuẩn và hướng dẫn của:
-
-- OWASP IoT Security Verification Standard (ISVS)
-- OWASP IoT Security Testing Guide (ISTG)
-- OWASP Internet of Things Project
-- NIST SP800-30
-- ISO/IEC 27005
+The framework is suitable for small organizations, educational laboratories and home IoT environments.
 
 ---
 
-# Mục tiêu
+# Objectives
 
-- Xác định các tài sản cần bảo vệ trong hệ thống IoT.
-- Phân tích các mối đe dọa và lỗ hổng bảo mật.
-- Đánh giá mức độ rủi ro theo phương pháp Likelihood × Impact.
-- Xây dựng Risk Register.
-- Thiết kế Ma trận rủi ro 5×5.
-- Đề xuất kế hoạch xử lý các rủi ro ưu tiên.
-- Xây dựng Checklist kiểm tra định kỳ.
+- Build an IoT asset inventory.
+- Identify threats and vulnerabilities.
+- Evaluate risks using Likelihood × Impact.
+- Build a Risk Register.
+- Create a 5×5 Risk Matrix.
+- Develop a Risk Treatment Plan.
+- Create a periodic Security Checklist.
+- Compare the methodology with international security standards.
 
 ---
 
-# Mô hình hệ thống
+# IoT System Architecture
 
-Hệ thống IoT khảo sát bao gồm:
+The laboratory includes:
 
-- Camera IP
-- Cảm biến nhiệt độ và độ ẩm
-- Cảm biến khói và PIR
-- Khóa cửa điện tử
-- Gateway Node-RED
-- Router Wi-Fi
+- IP Camera
+- Temperature Sensor
+- Smoke Sensor
+- PIR Sensor
+- Smart Door Lock
+- Gateway (Node-RED)
+- Wi-Fi Router
 - Cloud Dashboard
-- Ứng dụng Mobile
+- Mobile Application
 
 ```text
-Camera IP
+IP Camera
       │
-Cảm biến
+Temperature Sensor
       │
-Gateway Node-RED
+Smoke Sensor
       │
-Router Wi-Fi
+PIR Sensor
+      │
+Gateway (Node-RED)
+      │
+Wi-Fi Router
       │
 Cloud Dashboard
       │
-Ứng dụng Mobile
+Mobile Application
 ```
 
 ---
 
-# Cấu trúc Repository
+# Repository Structure
 
 ```text
-detai35-quanlyruiro-iot
+IoT-Security-Risk-Management
 │
 ├── README.md
 │
 ├── report
-│   └── Bao_cao_tieu_luan.docx
+│   ├── Bao_cao_tieu_luan.docx
+│   └── Bao_cao_tieu_luan.pdf
+│
+├── images
+│   ├── figure3_1_nist.png
+│   ├── figure3_2_owasp.png
+│   ├── figure4_1_architecture.png
+│   ├── figure5_1_risk_matrix.png
+│   ├── figure5_2_risk_register.png
+│   └── figure5_3_node_red.png
 │
 ├── results
-│   ├── 01_danh_muc_tai_san.csv
+│   ├── 01_asset_inventory.csv
 │   ├── 02_risk_register.csv
-│   ├── 03_ma_tran_rui_ro_5x5.csv
-│   ├── 04_ke_hoach_xu_ly_top5.csv
-│   └── 05_checklist_dinh_ky.csv
+│   ├── 03_risk_matrix.csv
+│   ├── 04_risk_treatment_plan.csv
+│   └── 05_security_checklist.csv
 │
 └── references
-    └── link_nguon.md
+    └── references.md
 ```
 
 ---
 
-# Nội dung Repository
+# Main Contents
 
-## 📁 report
+The repository contains:
 
-Thư mục chứa báo cáo chính của đề tài.
+## Asset Inventory
 
-Bao gồm:
+Identify critical assets of the IoT laboratory.
 
-- Báo cáo Word (.docx)
-- (Có thể bổ sung PDF nếu cần)
+## Risk Register
 
-Nội dung báo cáo:
+Security risks including:
 
-- Mở đầu
-- Mục tiêu
-- Cơ sở lý thuyết
-- Phương pháp nghiên cứu
-- Danh mục tài sản
-- Risk Register
-- Ma trận rủi ro
-- Kế hoạch xử lý
-- Checklist
-- Đánh giá bảo mật
-- Kết luận
-- Tài liệu tham khảo
+- Assets
+- Threats
+- Vulnerabilities
+- Likelihood
+- Impact
+- Risk Score
+- Risk Priority
 
----
+## 5×5 Risk Matrix
 
-## 📁 results
+Visual representation of security risks.
 
-Thư mục chứa toàn bộ sản phẩm phân tích của đề tài.
+## Risk Treatment Plan
 
-### 01_danh_muc_tai_san.csv
+Top five risks and mitigation strategies.
 
-Danh mục các tài sản cần bảo vệ trong hệ thống IoT.
+## Security Checklist
 
-### 02_risk_register.csv
-
-Sổ đăng ký rủi ro gồm:
-
-- Tài sản
-- Mối đe dọa
-- Lỗ hổng
-- Khả năng xảy ra
-- Mức độ ảnh hưởng
-- Điểm rủi ro
-- Biện pháp xử lý
-
-### 03_ma_tran_rui_ro_5x5.csv
-
-Ma trận đánh giá rủi ro theo 5 mức Khả năng xảy ra và 5 mức Ảnh hưởng.
-
-### 04_ke_hoach_xu_ly_top5.csv
-
-Kế hoạch xử lý 5 rủi ro có mức ưu tiên cao nhất.
-
-### 05_checklist_dinh_ky.csv
-
-Checklist kiểm tra định kỳ nhằm duy trì mức độ an toàn của hệ thống.
+Periodic inspection checklist for maintaining system security.
 
 ---
 
-## 📁 references
+# Project Outputs
 
-Thư mục lưu danh sách các nguồn tài liệu được sử dụng trong quá trình thực hiện đề tài.
+The project successfully produced:
 
----
-
-# Kết quả đạt được
-
-Đề tài đã hoàn thành các nội dung sau:
-
-- Xây dựng danh mục tài sản của hệ thống IoT.
-- Phân tích 17 rủi ro bảo mật.
-- Xây dựng Risk Register.
-- Thiết kế Ma trận rủi ro 5×5.
-- Đề xuất kế hoạch xử lý 5 rủi ro ưu tiên.
-- Xây dựng Checklist kiểm tra định kỳ.
-- Đánh giá mức độ rủi ro và đề xuất giải pháp giảm thiểu.
+- Asset Inventory
+- Risk Register (17 security risks)
+- 5×5 Risk Matrix
+- Risk Treatment Plan
+- Security Checklist
+- Node-RED Gateway Architecture
 
 ---
 
-# Tài liệu tham khảo
+# Figures
 
-Các tiêu chuẩn và tài liệu được sử dụng:
+The report contains six figures:
+
+- Figure 3.1 – NIST SP 800-30 Risk Management Process
+- Figure 3.2 – OWASP IoT Top 10
+- Figure 4.1 – IoT System Architecture
+- Figure 5.1 – 5×5 Risk Matrix
+- Figure 5.2 – Risk Register
+- Figure 5.3 – Node-RED Gateway Architecture
+
+---
+
+# Security Standards Used
+
+This project is based on:
+
+- OWASP IoT Project
+- OWASP ISVS
+- OWASP ISTG
+- NIST SP 800-30 Rev.1
+- ISO/IEC 27005
+
+---
+
+# References
 
 - OWASP IoT Security Verification Standard (ISVS)
 - OWASP IoT Security Testing Guide (ISTG)
 - OWASP Internet of Things Project
-- NIST SP800-30 – Guide for Conducting Risk Assessments
-- ISO/IEC 27005 – Information Security Risk Management
-
-
-Chi tiết xem tại: **[references/link_nguon.md](references/link_nguon.md)**
+- NIST SP 800-30
+- ISO/IEC 27005
+- Node-RED
 
 ---
 
-# Giới hạn của đề tài
+# Limitations
 
-- Hệ thống được xây dựng dưới dạng mô hình phục vụ học tập.
-- Không thực hiện kiểm thử trên hệ thống thực tế.
-- Không sử dụng dữ liệu cá nhân hoặc dữ liệu nhạy cảm.
-- Các đánh giá rủi ro được xây dựng dựa trên tài liệu tham khảo và mô hình giả định.
-
----
-
-# Cam kết
-
-Đề tài được thực hiện phục vụ mục đích học tập và nghiên cứu.
-
-Không sử dụng cho mục đích tấn công, khai thác hoặc gây ảnh hưởng đến bất kỳ hệ thống thực tế nào.
+- Educational laboratory model.
+- No penetration testing on production systems.
+- No personal or sensitive data.
+- Risk evaluation based on a simulated environment.
 
 ---
 
-# Tác giả
+# Future Work
 
-**Võ Nguyễn Duyên**
+Future improvements include:
 
-**Mã số sinh viên:** 231A010722
-
-**Trường:** Đại học Văn Hiến
-
-**Học phần:** Bảo mật trong IoT (INT4410)
-
-**Giảng viên hướng dẫn:** Hồ Nhựt Minh Sĩ
-
-**Năm học:** 2025–2026
+- Deploying the framework on a real IoT laboratory.
+- Automating configuration auditing.
+- Integrating CVSS scoring.
+- Developing a web dashboard for continuous monitoring.
+- Automating security checklist verification.
 
 ---
 
-# Giấy phép
+# Acknowledgements
 
-Repository này được tạo nhằm phục vụ mục đích học tập và nghiên cứu tại Trường Đại học Văn Hiến.
+Special thanks to
 
-© 2026 Võ Nguyễn Duyên. All Rights Reserved.
+**Ho Nhut Minh**
+
+for guidance throughout this project.
+
+Thanks to
+
+Van Hien University
+
+for providing the learning environment and resources.
+
+---
+
+# License
+
+This repository is created for educational and research purposes only.
+
+© 2026 Vo Nguyen Duyen
+
+All Rights Reserved.
