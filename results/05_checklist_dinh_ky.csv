@@ -1,16 +1,16 @@
-Nhom,Hang_muc_kiem_tra,Tan_suat,Dat_Chua_dat
-Thiet bi IoT,Kiem tra thiet bi con dung mat khau mac dinh,Hang thang,
-Thiet bi IoT,"Kiem tra phien ban firmware, cap nhat ban va moi nhat",Hang thang,
-Thiet bi IoT,"Kiem tra khoa cua thong minh, khong co dau hieu can thiep tin hieu",Hang tuan,
-Thiet bi IoT,Kiem tra cam bien PIR hoat dong binh thuong (heartbeat),Hang tuan,
-Gateway,"Kiem tra cau hinh xac thuc, phan quyen tren gateway",Hang thang,
-Gateway,"Kiem tra log truy cap gateway, phat hien bat thuong",Hang tuan,
-Mang truyen thong,Kiem tra du lieu truyen co ma hoa TLS/HTTPS,Hang quy,
-Mang truyen thong,Kiem tra phan doan mang (VLAN),Hang quy,
-May chu / CSDL,Kiem tra ban sao luu du lieu gan nhat,Hang tuan,
-May chu / CSDL,"Kiem tra va loi he dieu hanh, phan mem may chu",Hang thang,
-Tai khoan & truy cap,Kiem tra chinh sach mat khau va MFA,Hang quy,
-Tai khoan & truy cap,"Kiem tra gioi han truy cap tu xa (VPN, IP allowlist)",Hang quy,
-Ung dung quan ly,"Kiem thu lo hong ung dung web (XSS, SQLi)",Hang quy,
-Giam sat & ung pho,Kiem tra he thong log/canh bao hoat dong binh thuong,Hang tuan,
-Con nguoi,Dao tao nhan thuc an toan thong tin,6 thang/lan,
+Nhom,Hang_muc_kiem_tra,Tan_suat,Nguoi_phu_trach,Dat_Chua_dat,Minh_chung
+Thiet bi IoT,Kiem tra thiet bi con dung mat khau mac dinh,Hang thang,Quan tri vien he thong,Dat,Anh chup man hinh doi mat khau thiet bi ngay 05/07/2026
+Thiet bi IoT,"Kiem tra phien ban firmware, cap nhat ban va moi nhat",Hang thang,Quan tri vien he thong,Chua dat,Log kiem tra firmware ngay 05/07/2026 - con 2 thiet bi chua cap nhat ban moi nhat
+Thiet bi IoT,"Kiem tra khoa cua thong minh, khong co dau hieu can thiep tin hieu",Hang tuan,Nhan vien van hanh,Dat,Anh chup lich su hoat dong khoa cua ngay 12/07/2026
+Thiet bi IoT,Kiem tra cam bien PIR hoat dong binh thuong (heartbeat),Hang tuan,Nhan vien van hanh,Dat,Log heartbeat cam bien PIR ngay 12/07/2026
+Gateway,"Kiem tra cau hinh xac thuc, phan quyen tren gateway",Hang thang,Quan tri vien mang,Dat,Anh chup cau hinh phan quyen gateway ngay 06/07/2026
+Gateway,"Kiem tra log truy cap gateway, phat hien bat thuong",Hang tuan,Quan tri vien mang,Dat,File log truy cap gateway tuan 28/2026 - khong phat hien bat thuong
+Mang truyen thong,Kiem tra du lieu truyen co ma hoa TLS/HTTPS,Hang quy,Quan tri vien mang,Dat,Bao cao quet cau hinh TLS quy 2/2026
+Mang truyen thong,Kiem tra phan doan mang (VLAN),Hang quy,Quan tri vien mang,Dat,So do VLAN cap nhat va bang kiem tra quy 2/2026
+May chu / CSDL,Kiem tra ban sao luu du lieu gan nhat,Hang tuan,Quan tri vien he thong,Dat,Log backup tu dong ngay 13/07/2026
+May chu / CSDL,"Kiem tra va loi he dieu hanh, phan mem may chu",Hang thang,Quan tri vien he thong,Chua dat,Bao cao vulnerability scan thang 7/2026 - con 1 ban va loi chua cap nhat
+Tai khoan & truy cap,Kiem tra chinh sach mat khau va MFA,Hang quy,Quan tri vien bao mat,Dat,Bao cao rieng soat chinh sach mat khau va MFA quy 2/2026
+Tai khoan & truy cap,"Kiem tra gioi han truy cap tu xa (VPN, IP allowlist)",Hang quy,Quan tri vien bao mat,Dat,Danh sach IP allowlist va cau hinh VPN quy 2/2026
+Ung dung quan ly,"Kiem thu lo hong ung dung web (XSS, SQLi)",Hang quy,Quan tri vien bao mat,Chua dat,Bao cao kiem thu bao mat quy 2/2026 - phat hien 1 loi XSS muc trung binh dang khac phuc
+Giam sat & ung pho,Kiem tra he thong log/canh bao hoat dong binh thuong,Hang tuan,Quan tri vien bao mat,Dat,Anh chup dashboard canh bao tuan 28/2026
+Con nguoi,Dao tao nhan thuc an toan thong tin,6 thang/lan,Truong nhom du an,Dat,Danh sach diem danh buoi dao tao an toan thong tin ngay 15/06/2026
