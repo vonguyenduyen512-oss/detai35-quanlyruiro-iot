@@ -4,7 +4,7 @@ STT,Tai_san,Loai_tai_san,Gia_tri_1_5,Vung_tin_cay
 3,Cam bien chuyen dong (PIR),Thiet bi IoT,3,Vung khong tin cay (Thiet bi)
 4,Khoa cua thong minh,Thiet bi IoT,5,Vung khong tin cay (Thiet bi)
 5,Gateway / Edge Device,Thiet bi mang,5,Vung ban tin cay (Gateway/Edge)
-6,Firmware thiet bi,Phan mem nhung,4,Vung khong tin cay / ban tin cay
+6,Firmware thiet bi,Phan mem nhung,4,Vung khong tin cay (Thiet bi)
 7,Du lieu cam bien,Du lieu,3,Xuyen suot cac vung
 8,Tai khoan quan tri,Dinh danh/Truy cap,5,Vung tin cay (Ung dung/Nguoi dung)
 9,Co so du lieu (Database),Du lieu / Ha tang,5,Vung tin cay (Server/Cloud)
