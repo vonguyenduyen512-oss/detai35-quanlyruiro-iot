@@ -1,18 +1,18 @@
-ID,Tai_san,Moi_de_doa,Lo_hong,Kha_nang_L_1_5,Anh_huong_I_1_5,Diem_rui_ro,Muc_do
-R-01,Camera IP,Truy cap trai phep vao thiet bi,Su dung mat khau mac dinh cua nha san xuat,4,4,16,Rat cao
-R-02,Gateway,Khai thac lo hong de chiem quyen dieu khien,Gateway khong duoc cap nhat firmware dinh ky,4,5,20,Nghiem trong
-R-03,Du lieu cam bien,Nghe len du lieu trong qua trinh truyen tai,Du lieu truyen giua thiet bi va gateway khong duoc ma hoa,3,3,9,Trung binh
-R-04,Tai khoan quan tri,Chiem quyen tai khoan quan tri,"Mat khau yeu, khong ap dung xac thuc da yeu to (MFA)",5,4,20,Nghiem trong
-R-05,May chu / Cloud server,Truy cap trai phep vao may chu,"Cau hinh sai, mo cac cong dich vu khong can thiet",3,4,12,Cao
-R-06,Firmware thiet bi,Khai thac lo hong da cong bo (CVE),"Firmware loi thoi, khong con duoc nha san xuat ho tro",4,4,16,Rat cao
-R-07,Gateway / MQTT,"Gia mao thiet bi, chen du lieu gia",Giao thuc MQTT khong xac thuc va khong ma hoa,3,3,9,Trung binh
-R-08,Ha tang mang noi bo,Lan truyen tan cong giua cac thiet bi,Mang noi bo khong duoc phan doan (VLAN),2,3,6,Trung binh
-R-09,Nhat ky he thong (Log),Khong phat hien kip thoi su co bao mat,Thieu co che giam sat va ghi log hoat dong he thong,4,3,12,Cao
-R-10,Gateway / May chu,Tan cong tu choi dich vu (DoS),Thieu co che gioi han toc do truy cap (rate limiting),2,4,8,Trung binh
-R-11,Ung dung quan ly,"Khai thac lo hong ung dung web (XSS, SQL Injection)",Ung dung quan ly chua kiem thu bao mat day du,3,4,12,Cao
-R-12,Co so du lieu,Mat du lieu khi xay ra su co,Sao luu du lieu khong day du hoac khong dinh ky,2,3,6,Trung binh
-R-13,Khoa ma hoa,Lo khoa ma hoa dan den giai ma du lieu trai phep,Quan ly va luu tru khoa ma hoa khong chat che,2,4,8,Trung binh
-R-14,Ung dung quan ly / Server,Truy cap trai phep tu xa vao he thong quan ly,"Cho phep truy cap tu xa khong gioi han IP, khong dung VPN",4,4,16,Rat cao
-R-15,Nguoi dung / Quan tri vien,Bi lua dao (phishing) dan den lo thong tin dang nhap,Thieu nhan thuc va dao tao ve an toan thong tin,4,3,12,Cao
-R-16,Khoa cua thong minh,Mo khoa trai phep tu xa (replay attack),Giao thuc khong day (Wi-Fi/ZigBee/BLE) thieu ma hoa,3,5,15,Rat cao
-R-17,Cam bien chuyen dong (PIR),Gia mao/vo hieu hoa cam bien,Thieu co che giam sat tinh trang hoat dong (heartbeat),2,3,6,Trung binh
+ID,Tai_san,Moi_de_doa,Lo_hong,Kha_nang_L_1_5,Anh_huong_I_1_5,Diem_rui_ro,Muc_do,Bien_phap_xu_ly,Nguoi_phu_trach,Trang_thai
+R-01,Camera IP,Truy cap trai phep vao thiet bi,Su dung mat khau mac dinh cua nha san xuat,4,4,16,Rat cao,Doi mat khau mac dinh va ap dung mat khau manh,Administrator,Hoan thanh
+R-02,Gateway,Khai thac lo hong de chiem quyen dieu khien,Gateway khong duoc cap nhat firmware dinh ky,4,5,20,Nghiem trong,Cap nhat firmware dinh ky va theo doi CVE,Administrator,Dang thuc hien
+R-03,Du lieu cam bien,Nghe len du lieu trong qua trinh truyen tai,Du lieu truyen giua thiet bi va gateway khong duoc ma hoa,3,3,9,Trung binh,Bat TLS va ma hoa du lieu truyen,Operator,Hoan thanh
+R-04,Tai khoan quan tri,Chiem quyen tai khoan quan tri,"Mat khau yeu, khong ap dung xac thuc da yeu to (MFA)",5,4,20,Nghiem trong,Ap dung MFA va chinh sach mat khau manh,Administrator,Dang thuc hien
+R-05,May chu / Cloud server,Truy cap trai phep vao may chu,"Cau hinh sai, mo cac cong dich vu khong can thiet",3,4,12,Cao,Ra soat cau hinh va dong cac cong khong can thiet,System Administrator,Dang thuc hien
+R-06,Firmware thiet bi,Khai thac lo hong da cong bo (CVE),"Firmware loi thoi, khong con duoc nha san xuat ho tro",4,4,16,Rat cao,Nang cap firmware len phien ban moi nhat,Administrator,Dang thuc hien
+R-07,Gateway / MQTT,"Gia mao thiet bi, chen du lieu gia",Giao thuc MQTT khong xac thuc va khong ma hoa,3,3,9,Trung binh,Su dung TLS va xac thuc MQTT,Operator,Hoan thanh
+R-08,Ha tang mang noi bo,Lan truyen tan cong giua cac thiet bi,Mang noi bo khong duoc phan doan (VLAN),2,3,6,Trung binh,Phan doan mang bang VLAN,Network Administrator,Ke hoach
+R-09,Nhat ky he thong (Log),Khong phat hien kip thoi su co bao mat,Thieu co che giam sat va ghi log hoat dong he thong,4,3,12,Cao,Trien khai Logging va giam sat tap trung,System Administrator,Dang thuc hien
+R-10,Gateway / May chu,Tan cong tu choi dich vu (DoS),Thieu co che gioi han toc do truy cap (rate limiting),2,4,8,Trung binh,Cau hinh rate limiting va firewall,Network Administrator,Ke hoach
+R-11,Ung dung quan ly,"Khai thac lo hong ung dung web (XSS, SQL Injection)",Ung dung quan ly chua kiem thu bao mat day du,3,4,12,Cao,Kiem thu bao mat va sua loi ung dung,Developer,Dang thuc hien
+R-12,Co so du lieu,Mat du lieu khi xay ra su co,Sao luu du lieu khong day du hoac khong dinh ky,2,3,6,Trung binh,Thiet lap sao luu tu dong va kiem tra phuc hoi,Database Administrator,Hoan thanh
+R-13,Khoa ma hoa,Lo khoa ma hoa dan den giai ma du lieu trai phep,Quan ly va luu tru khoa ma hoa khong chat che,2,4,8,Trung binh,Luu tru khoa an toan va xoay vong khoa dinh ky,Security Administrator,Ke hoach
+R-14,Ung dung quan ly / Server,Truy cap trai phep tu xa vao he thong quan ly,"Cho phep truy cap tu xa khong gioi han IP, khong dung VPN",4,4,16,Rat cao,Gioi han IP va su dung VPN,Network Administrator,Dang thuc hien
+R-15,Nguoi dung / Quan tri vien,Bi lua dao (phishing) dan den lo thong tin dang nhap,Thieu nhan thuc va dao tao ve an toan thong tin,4,3,12,Cao,Dao tao nhan thuc ATTT va dien tap phishing,Administrator,Ke hoach
+R-16,Khoa cua thong minh,Mo khoa trai phep tu xa (replay attack),Giao thuc khong day (Wi-Fi/ZigBee/BLE) thieu ma hoa,3,5,15,Rat cao,Su dung ma hoa va co che chong replay attack,Administrator,Dang thuc hien
+R-17,Cam bien chuyen dong (PIR),Gia mao/vo hieu hoa cam bien,Thieu co che giam sat tinh trang hoat dong (heartbeat),2,3,6,Trung binh,Bo sung heartbeat va canh bao mat ket noi,Operator,Ke hoach
