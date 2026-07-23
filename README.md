@@ -1,7 +1,5 @@
  
-# DeTai35-IoT-Security-Risk-Management
-
-## Quản lý rủi ro bảo mật cho hệ thống IoT quy mô nhỏ
+# DeTai35- Quản lý rủi ro bảo mật cho hệ thống IoT quy mô nhỏ
 
 **Tiểu luận kết thúc học phần – Bảo mật IoT (INT4410)**
 
