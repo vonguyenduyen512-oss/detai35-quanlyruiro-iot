@@ -1,16 +1,16 @@
-Nhom,Hang_muc_kiem_tra,Tan_suat,Nguoi_phu_trach,Dat_Chua_dat,Minh_chung
-Thiet bi IoT,Kiem tra thiet bi con dung mat khau mac dinh,Hang thang,Quan tri vien he thong,Dat,Anh chup man hinh doi mat khau thiet bi ngay 05/07/2026
-Thiet bi IoT,"Kiem tra phien ban firmware, cap nhat ban va moi nhat",Hang thang,Quan tri vien he thong,Chua dat,Log kiem tra firmware ngay 05/07/2026 - con 2 thiet bi chua cap nhat ban moi nhat
-Thiet bi IoT,"Kiem tra khoa cua thong minh, khong co dau hieu can thiep tin hieu",Hang tuan,Nhan vien van hanh,Dat,Anh chup lich su hoat dong khoa cua ngay 12/07/2026
-Thiet bi IoT,Kiem tra cam bien PIR hoat dong binh thuong (heartbeat),Hang tuan,Nhan vien van hanh,Dat,Log heartbeat cam bien PIR ngay 12/07/2026
-Gateway,"Kiem tra cau hinh xac thuc, phan quyen tren gateway",Hang thang,Quan tri vien mang,Dat,Anh chup cau hinh phan quyen gateway ngay 06/07/2026
-Gateway,"Kiem tra log truy cap gateway, phat hien bat thuong",Hang tuan,Quan tri vien mang,Dat,File log truy cap gateway tuan 28/2026 - khong phat hien bat thuong
-Mang truyen thong,Kiem tra du lieu truyen co ma hoa TLS/HTTPS,Hang quy,Quan tri vien mang,Dat,Bao cao quet cau hinh TLS quy 2/2026
-Mang truyen thong,Kiem tra phan doan mang (VLAN),Hang quy,Quan tri vien mang,Dat,So do VLAN cap nhat va bang kiem tra quy 2/2026
-May chu / CSDL,Kiem tra ban sao luu du lieu gan nhat,Hang tuan,Quan tri vien he thong,Dat,Log backup tu dong ngay 13/07/2026
-May chu / CSDL,"Kiem tra va loi he dieu hanh, phan mem may chu",Hang thang,Quan tri vien he thong,Chua dat,Bao cao vulnerability scan thang 7/2026 - con 1 ban va loi chua cap nhat
-Tai khoan & truy cap,Kiem tra chinh sach mat khau va MFA,Hang quy,Quan tri vien bao mat,Dat,Bao cao rieng soat chinh sach mat khau va MFA quy 2/2026
-Tai khoan & truy cap,"Kiem tra gioi han truy cap tu xa (VPN, IP allowlist)",Hang quy,Quan tri vien bao mat,Dat,Danh sach IP allowlist va cau hinh VPN quy 2/2026
-Ung dung quan ly,"Kiem thu lo hong ung dung web (XSS, SQLi)",Hang quy,Quan tri vien bao mat,Chua dat,Bao cao kiem thu bao mat quy 2/2026 - phat hien 1 loi XSS muc trung binh dang khac phuc
-Giam sat & ung pho,Kiem tra he thong log/canh bao hoat dong binh thuong,Hang tuan,Quan tri vien bao mat,Dat,Anh chup dashboard canh bao tuan 28/2026
-Con nguoi,Dao tao nhan thuc an toan thong tin,6 thang/lan,Truong nhom du an,Dat,Danh sach diem danh buoi dao tao an toan thong tin ngay 15/06/2026
+Nhom,Hang_muc_kiem_tra,Tham_chieu_OWASP_ISVS_ISTG,Tan_suat,Nguoi_phu_trach,Dat_Chua_dat,Minh_chung
+Thiet bi IoT,Kiem tra thiet bi con dung mat khau mac dinh,OWASP ISVS - Authentication,Hang thang,Quan tri vien he thong,Dat,EV01_Password_Change.pdf
+Thiet bi IoT,"Kiem tra phien ban firmware, cap nhat ban va moi nhat",OWASP ISTG - Firmware Security,Hang thang,Quan tri vien he thong,Chua dat,EV02_Firmware_Check.pdf
+Thiet bi IoT,"Kiem tra khoa cua thong minh, khong co dau hieu can thiep tin hieu",OWASP ISTG - Device Security,Hang tuan,Nhan vien van hanh,Dat,EV03_SmartLock_Log.pdf
+Thiet bi IoT,Kiem tra cam bien PIR hoat dong binh thuong (heartbeat),OWASP ISTG - Device Monitoring,Hang tuan,Nhan vien van hanh,Dat,EV04_PIR_Heartbeat.pdf
+Gateway,"Kiem tra cau hinh xac thuc, phan quyen tren gateway",OWASP ISVS - Authentication & Authorization,Hang thang,Quan tri vien mang,Dat,EV05_Gateway_Config.pdf
+Gateway,"Kiem tra log truy cap gateway, phat hien bat thuong",OWASP ISVS - Logging & Monitoring,Hang tuan,Quan tri vien mang,Dat,EV06_Gateway_Log.pdf
+Mang truyen thong,Kiem tra du lieu truyen co ma hoa TLS/HTTPS,OWASP ISVS - Secure Communication,Hang quy,Quan tri vien mang,Dat,EV07_TLS_Verification.pdf
+Mang truyen thong,Kiem tra phan doan mang (VLAN),OWASP ISTG - Network Segmentation,Hang quy,Quan tri vien mang,Dat,EV08_VLAN_Review.pdf
+May chu / CSDL,Kiem tra ban sao luu du lieu gan nhat,OWASP ISVS - Data Protection & Backup,Hang tuan,Quan tri vien he thong,Dat,EV09_Backup_Log.pdf
+May chu / CSDL,"Kiem tra va loi he dieu hanh, phan mem may chu",OWASP ISTG - Patch Management,Hang thang,Quan tri vien he thong,Chua dat,EV10_Vulnerability_Report.pdf
+Tai khoan & truy cap,Kiem tra chinh sach mat khau va MFA,OWASP ISVS - Authentication,Hang quy,Quan tri vien bao mat,Dat,EV11_MFA_Audit.pdf
+Tai khoan & truy cap,"Kiem tra gioi han truy cap tu xa (VPN, IP Allowlist)",OWASP ISVS - Access Control,Hang quy,Quan tri vien bao mat,Dat,EV12_VPN_Access_Review.pdf
+Ung dung quan ly,"Kiem thu lo hong ung dung web (XSS, SQLi)",OWASP ISVS - Application Security Testing,Hang quy,Quan tri vien bao mat,Chua dat,EV13_Web_Security_Test.pdf
+Giam sat & ung pho,Kiem tra he thong log/canh bao hoat dong binh thuong,OWASP ISVS - Logging & Monitoring,Hang tuan,Quan tri vien bao mat,Dat,EV14_Security_Monitoring.pdf
+Con nguoi,Dao tao nhan thuc an toan thong tin,OWASP ISVS - Security Awareness,6 thang/lan,Truong nhom du an,Dat,EV15_Training_Attendance.pdf
