@@ -1,6 +1,6 @@
 ID,Rui_ro,Muc_do,Bien_phap_giam_thieu,Rui_ro_con_lai
 R-02,Gateway khong cap nhat firmware dinh ky,Nghiem trong,"Thiet lap lich cap nhat firmware dinh ky; dang ky nhan canh bao bao mat (security advisory) tu nha san xuat; kiem thu firmware truoc khi trien khai.",Cao -> Trung binh
 R-04,"Tai khoan quan tri dung mat khau yeu, khong co MFA",Nghiem trong,"Ap dung chinh sach mat khau manh, bat buoc xac thuc da yeu to (MFA); khoa tai khoan sau nhieu lan dang nhap sai.",Cao -> Thap
-R-16,Khoa cua thong minh bi mo khoa trai phep (replay attack),Rat cao,"Ap dung ma hoa va co che chong lap lai tin hieu (rolling code); gioi han khoang cach ket noi; canh bao khi co yeu cau mo khoa bat thuong.",Trung binh -> Thap
 R-01,Camera IP su dung mat khau mac dinh,Rat cao,"Bat buoc doi mat khau mac dinh khi cai dat; vo hieu hoa tai khoan mac dinh; dat thiet bi trong VLAN rieng.",Trung binh -> Thap
 R-06,Firmware thiet bi loi thoi chua CVE da cong bo,Rat cao,"Thay the thiet bi khong con duoc ho tro; quet lo hong dinh ky; va loi ngay khi co ban cap nhat.",Trung binh -> Thap
+R-14,Truy cap tu xa khong gioi han vao he thong quan ly,Rat cao,"Gioi han truy cap tu xa qua VPN; ap dung whitelist dia chi IP; bat MFA cho tai khoan quan tri tu xa; ghi log va canh bao khi co dang nhap tu xa bat thuong.",Trung binh -> Thap
