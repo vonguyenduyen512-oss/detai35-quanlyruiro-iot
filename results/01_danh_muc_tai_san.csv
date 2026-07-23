@@ -1,11 +1,16 @@
-STT,Tai_san,Mo_ta_vai_tro,Vi_tri_luu_tru_xu_ly
-1,Camera IP giam sat,"Ghi hinh khu vuc phong Lab, truyen video qua Wi-Fi","Thiet bi + luu cuc bo/cloud"
-2,Cam bien nhiet do/do am,"Giam sat dieu kien moi truong phong may","Gateway -> dashboard cloud"
-3,Cam bien khoi/PIR,"Canh bao chay va phat hien chuyen dong","Gateway noi bo"
-4,Khoa cua dien tu thong minh,"Kiem soat ra vao phong Lab","Thiet bi + app dieu khien"
-5,Gateway/Node-RED,"Thu thap, loc va chuyen tiep du lieu cam bien","May chu noi bo phong Lab"
-6,Router/Access Point Wi-Fi,"Ket noi mang cho toan bo thiet bi IoT","Ha tang mang phong Lab"
-7,Dashboard giam sat tren cloud,"Hien thi trang thai thiet bi, canh bao","Dich vu cloud ben thu ba"
-8,Tai khoan quan tri (admin),"Quan ly cau hinh router, gateway, camera","Luu tren thiet bi/he thong quan ly"
-9,Du lieu log/lich su truy cap,"Ghi nhan su kien ra vao, canh bao","Server noi bo hoac cloud"
-10,Ung dung di dong dieu khien,"Cho phep giang vien/quan tri theo doi tu xa","Dien thoai ca nhan"
+STT,Tai_san,Loai_tai_san,Gia_tri_1_5,Vung_tin_cay
+1,Cam bien nhiet do/do am,Thiet bi IoT,3,Vung khong tin cay (Thiet bi)
+2,Camera IP,Thiet bi IoT,4,Vung khong tin cay (Thiet bi)
+3,Cam bien chuyen dong (PIR),Thiet bi IoT,3,Vung khong tin cay (Thiet bi)
+4,Khoa cua thong minh,Thiet bi IoT,5,Vung khong tin cay (Thiet bi)
+5,Gateway / Edge Device,Thiet bi mang,5,Vung ban tin cay (Gateway/Edge)
+6,Firmware thiet bi,Phan mem nhung,4,Vung khong tin cay / ban tin cay
+7,Du lieu cam bien,Du lieu,3,Xuyen suot cac vung
+8,Tai khoan quan tri,Dinh danh/Truy cap,5,Vung tin cay (Ung dung/Nguoi dung)
+9,Co so du lieu (Database),Du lieu / Ha tang,5,Vung tin cay (Server/Cloud)
+10,May chu / Cloud server,Ha tang,5,Vung tin cay (Server/Cloud)
+11,Web Dashboard,Phan mem,4,Vung tin cay (Ung dung/Nguoi dung)
+12,Ung dung di dong (Mobile App),Phan mem,4,Vung tin cay (Ung dung/Nguoi dung)
+13,Khoa ma hoa (Encryption keys),Dinh danh/Bao mat,5,Xuyen suot cac vung
+14,Ha tang mang noi bo / Internet,Ha tang mang,4,Vung ban tin cay / khong tin cay
+15,Nhat ky he thong (Log),Du lieu,3,Vung tin cay (Server/Cloud)
