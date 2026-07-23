@@ -1,18 +1,18 @@
-STT,Tai_san,Moi_de_doa,Lo_hong,Kha_nang_1_5,Anh_huong_1_5,Diem_rui_ro,Muc_uu_tien
-1,Camera IP,Truy cap trai phep qua Internet,Mat khau mac dinh chua doi,4,5,20,Nghiem trong
-2,Tai khoan admin,Doan/be mat khau quan tri,"Khong co MFA, mat khau yeu",4,5,20,Nghiem trong
-3,Router Wi-Fi,Tan cong tu Internet do mo cong,Port forwarding khong can thiet,3,5,15,Cao
-4,Gateway/Node-RED,Gia mao du lieu cam bien,Khong xac thuc nguon du lieu,3,4,12,Cao
-5,Khoa cua dien tu,Mo khoa trai phep bang replay lenh,Giao tiep khong chong replay,2,5,10,Cao
-6,Dashboard cloud,Ro ri du lieu giam sat,Phan quyen tai khoan qua rong,3,4,12,Cao
-7,Camera IP,Nghe len luong video,Truyen du lieu khong ma hoa,3,4,12,Cao
-8,Cam bien khoi/PIR,Mat ket noi gay cham canh bao chay,Khong co co che heartbeat/giam sat,2,5,10,Cao
-9,App di dong dieu khien,Lo token dang nhap,Luu token khong ma hoa tren may,2,4,8,Trung binh
-10,Du lieu log,Sua doi/xoa log de che giau su co,Khong phan quyen ghi/doc log,2,4,8,Trung binh
-11,Router Wi-Fi,Truy cap mang noi bo qua Wi-Fi yeu,Dung WPA2 voi mat khau ngan,3,3,9,Trung binh
-12,Cam bien nhiet do/do am,Sai lech du lieu anh huong canh bao,Thiet bi khong cap nhat firmware,3,3,9,Trung binh
-13,Gateway/Node-RED,Tu choi dich vu (DoS) do qua tai request,Khong co gioi han tan suat (rate limit),2,4,8,Trung binh
-14,Tai khoan admin,Dung chung mot tai khoan cho nhieu nguoi,Thieu chinh sach phan quyen ca nhan,3,3,9,Trung binh
-15,Toan he thong,Mat dien/mat mang lam gian doan giam sat,Khong co nguon du phong (UPS),2,3,6,Thap
-16,Camera IP,Thiet bi bi chiem quyen lam botnet,"Firmware cu, dich vu Telnet con mo",2,4,8,Trung binh
-17,Ung dung di dong,Mat dien thoai chua quyen dieu khien,Khong co khoa man hinh/dang xuat tu dong,2,3,6,Thap
+ID,Tai_san,Moi_de_doa,Lo_hong,Kha_nang_L_1_5,Anh_huong_I_1_5,Diem_rui_ro,Muc_do
+R-01,Camera IP,Truy cap trai phep vao thiet bi,Su dung mat khau mac dinh cua nha san xuat,4,4,16,Rat cao
+R-02,Gateway,Khai thac lo hong de chiem quyen dieu khien,Gateway khong duoc cap nhat firmware dinh ky,4,5,20,Nghiem trong
+R-03,Du lieu cam bien,Nghe len du lieu trong qua trinh truyen tai,Du lieu truyen giua thiet bi va gateway khong duoc ma hoa,3,3,9,Trung binh
+R-04,Tai khoan quan tri,Chiem quyen tai khoan quan tri,"Mat khau yeu, khong ap dung xac thuc da yeu to (MFA)",5,4,20,Nghiem trong
+R-05,May chu / Cloud server,Truy cap trai phep vao may chu,"Cau hinh sai, mo cac cong dich vu khong can thiet",3,4,12,Cao
+R-06,Firmware thiet bi,Khai thac lo hong da cong bo (CVE),"Firmware loi thoi, khong con duoc nha san xuat ho tro",4,4,16,Rat cao
+R-07,Gateway / MQTT,"Gia mao thiet bi, chen du lieu gia",Giao thuc MQTT khong xac thuc va khong ma hoa,3,3,9,Trung binh
+R-08,Ha tang mang noi bo,Lan truyen tan cong giua cac thiet bi,Mang noi bo khong duoc phan doan (VLAN),2,3,6,Trung binh
+R-09,Nhat ky he thong (Log),Khong phat hien kip thoi su co bao mat,Thieu co che giam sat va ghi log hoat dong he thong,4,3,12,Cao
+R-10,Gateway / May chu,Tan cong tu choi dich vu (DoS),Thieu co che gioi han toc do truy cap (rate limiting),2,4,8,Trung binh
+R-11,Ung dung quan ly,"Khai thac lo hong ung dung web (XSS, SQL Injection)",Ung dung quan ly chua kiem thu bao mat day du,3,4,12,Cao
+R-12,Co so du lieu,Mat du lieu khi xay ra su co,Sao luu du lieu khong day du hoac khong dinh ky,2,3,6,Trung binh
+R-13,Khoa ma hoa,Lo khoa ma hoa dan den giai ma du lieu trai phep,Quan ly va luu tru khoa ma hoa khong chat che,2,4,8,Trung binh
+R-14,Ung dung quan ly / Server,Truy cap trai phep tu xa vao he thong quan ly,"Cho phep truy cap tu xa khong gioi han IP, khong dung VPN",4,4,16,Rat cao
+R-15,Nguoi dung / Quan tri vien,Bi lua dao (phishing) dan den lo thong tin dang nhap,Thieu nhan thuc va dao tao ve an toan thong tin,4,3,12,Cao
+R-16,Khoa cua thong minh,Mo khoa trai phep tu xa (replay attack),Giao thuc khong day (Wi-Fi/ZigBee/BLE) thieu ma hoa,3,5,15,Rat cao
+R-17,Cam bien chuyen dong (PIR),Gia mao/vo hieu hoa cam bien,Thieu co che giam sat tinh trang hoat dong (heartbeat),2,3,6,Trung binh
